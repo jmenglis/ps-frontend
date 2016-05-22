@@ -1,21 +1,8 @@
 window.onload =  function() {
   console.log("App.js has loaded");
-  $.ajax({
-    // type: 'get',
-    // datatype: 'json',
-    // url: 'http://applicant.pointsource.us/api/testUser/573f5d0b7e3d61136595a180',
-    // success: function(response) {
-    //   console.log(response)
-    // },
-    // error: function(e) {
-    //   console.log(e);
-    // }
-  })
-
-  // $.getJSON('http://applicant.pointsource.us/api/testUser/573f5d0b7e3d61136595a180', function(response) {
-  //   console.log(response);
-  // });
 }
+
+// Creating module for Angular called myApp and a UserController.
 angular.module('myApp', [])
   .controller("UserController", function($scope, $http) {
     $scope.init = function () {
@@ -33,6 +20,7 @@ angular.module('myApp', [])
       $scope.st = response.data.person.address["st"];
       $scope.zip = response.data.person.address["zip"];
       $scope.unitNum = response.data.person.address["unit-number"];
+      // Correcting for incorrectly uploaded image under .img extension.
       var newURL = response.data.person.pictureURL.replace(".img", ".png");
       $scope.imageUrl = "http://applicant.pointsource.us" + newURL;
     })
