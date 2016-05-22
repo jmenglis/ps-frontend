@@ -3,15 +3,22 @@
   position: relative;
   width: 768px;
   height: 96px;
-  background: red;
-  line-height: 96px; }
+  background: red; }
 
-.img {
-  position: static;
+.left {
+  float: left;
+  width: 50%;
+  height: 100%; }
+
+.right {
+  display: table;
+  width: 50%;
+  height: 100%; }
+
+img {
   float: left;
   height: 88px;
   width: 88px;
-  background: blue;
   border: 4px;
   border-color: black;
   border-style: solid; }
@@ -21,18 +28,14 @@
   padding-left: 10px;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 36px;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 96px; }
 
 .address {
   float: right;
   padding-right: 19px;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 96px;
   text-align: center; }
-
-.middle {
-  vertical-align: middle;
-  line-height: 1px; }
 
 /*# sourceMappingURL=styles.css.map */

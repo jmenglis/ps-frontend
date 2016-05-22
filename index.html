@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp" ng-controller="UserController">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +8,26 @@
 </head>
 <body>
   <div class="container">
-    <div>
-      <div class="img">
-      </div>
+    <div class="left" data-ng-init="init()">
+      <img src="https://placeholdit.imgix.net/~text?txtsize=20&txt=88%C3%9788&w=88&h=88">
       <div class="heading">
       <span>
       Josh English
       </span>
       </div>
+    </div>
+    <div class="right">
       <div class="address">
-      <span class="middle">
-      900 N Kingsbury St <br />
-      Chicago, NC <br />
-      60610
-      </span>
+      <p>
+        900 N Kingsbury<br />
+        Chicago IL<br />
+        60610<br />
+      </p>
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
