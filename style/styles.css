@@ -2,40 +2,48 @@
   margin: 0 auto;
   position: relative;
   width: 768px;
-  height: 96px;
-  background: red; }
+  height: 96px; }
 
 .left {
   float: left;
-  width: 50%;
+  width: 70%;
   height: 100%; }
 
 .right {
   display: table;
-  width: 50%;
+  width: 30%;
   height: 100%; }
 
 img {
   float: left;
   height: 88px;
-  width: 88px;
+  width: 88px; }
+
+.male {
   border: 4px;
-  border-color: black;
+  border-color: #37d5fe;
+  border-style: solid; }
+
+.female {
+  border: 4px;
+  border-color: #ee4494;
   border-style: solid; }
 
 .heading {
   float: left;
   padding-left: 10px;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 700;
-  line-height: 96px; }
+  line-height: 96px;
+  color: #575757; }
 
 .address {
   float: right;
   padding-right: 19px;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
-  text-align: center; }
+  text-align: center;
+  color: #575757; }
 
 /*# sourceMappingURL=styles.css.map */

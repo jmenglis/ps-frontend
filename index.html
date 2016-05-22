@@ -9,19 +9,22 @@
 <body>
   <div class="container">
     <div class="left" data-ng-init="init()">
-      <img src="https://placeholdit.imgix.net/~text?txtsize=20&txt=88%C3%9788&w=88&h=88">
+      <div ng-switch="gender">
+        <img ng-switch-when="male" class="male" src={{imageUrl}}>
+        <img ng-switch-when="female" class="female" src={{imageUrl}}>
+      </div>
       <div class="heading">
       <span>
-      Josh English
+      {{firstName}} {{lastName}}
       </span>
       </div>
     </div>
     <div class="right">
       <div class="address">
       <p>
-        900 N Kingsbury<br />
-        Chicago IL<br />
-        60610<br />
+        {{houseNum}} {{streetName}} {{unitNumb ? unitNumb : "" }}<br />
+        {{city}}, {{st}}<br />
+        {{zip}}<br />
       </p>
       </div>
     </div>
